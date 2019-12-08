@@ -19,3 +19,5 @@ const Route = use('Route')
 Route.on('/').render('welcome')
 
 Route.get('/products/:product', 'ProductController.search')
+Route.on('search',).render('search')
+Route.on('about',).render('about')
