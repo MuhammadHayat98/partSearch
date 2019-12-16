@@ -16,7 +16,7 @@
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
 const Route = use('Route')
 
-Route.on('/').render('welcome')
+Route.on('/').render('login')
 // Route.get('/listing/:product', 'ListingController.list')
 Route.on('/listing').render('listing');
 Route.get('/products/:product', 'ProductController.search')
