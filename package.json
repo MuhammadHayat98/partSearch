@@ -30,7 +30,20 @@
     "amazon-buddy": "^1.4.7",
     "sort-json-array": "^0.1.7"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^3.3.2",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
   "autoload": {
     "App": "./app"
   }
