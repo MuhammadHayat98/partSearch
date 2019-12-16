@@ -22,3 +22,6 @@ Route.on('/listing').render('listing');
 Route.get('/products/:product', 'ProductController.search')
 Route.on('search',).render('search')
 Route.on('about',).render('about')
+Route.on('login',).render('login')
+Route.on('register',).render('register')
+Route.on('forget',).render('forget')
