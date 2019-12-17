@@ -13,7 +13,7 @@ class ProductController {
     }
     //returns list of 10 products
     async amzSearch(productName) {
-        let products = await amazonScraper.products({keyword: productName, number: 10, save: false})
+        let products = await amazonScraper.products({keyword: productName, number: 100, save: false})
         return products
     }
 
