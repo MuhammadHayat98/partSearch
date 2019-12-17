@@ -22,6 +22,8 @@ Route.get('/listing','ListingController.view');
 Route.get('/products/:product', 'ProductController.search')
 Route.get('search','SearchController.view')
 Route.get('about','AboutController.view')
-Route.on('login',).render('login')
-Route.on('register',).render('register')
+
+Route.on('login','LoginController.')
+Route.get('register','RegisterController.create').as('register.create')
+Route.post('register','RegisterController.store').as('register.store')
 Route.on('forget',).render('forget')
