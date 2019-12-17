@@ -16,7 +16,7 @@ class ListingController {
 
     getJson(itemName) {
         return new Promise((resolve, reject) => {
-            request.get({ url: `https://serpapi.com/search.json?engine=google&q=${itemName}&location=United+States&google_domain=google.com&gl=us&hl=en&num=8&tbm=shop&api_key=99ecb6efc243f1e5d8cb3c5ed3fe736a412bfdaaf2158122d72f911a56dc544f` },
+            request.get({ url: `https://serpapi.com/search.json?engine=google&q=${itemName}&location=United+States&google_domain=google.com&gl=us&hl=en&num=40&tbm=shop&api_key=99ecb6efc243f1e5d8cb3c5ed3fe736a412bfdaaf2158122d72f911a56dc544f` },
               (err, request, body) => {
                 if (err) { return reject(err) }
       

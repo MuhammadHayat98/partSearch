@@ -53,7 +53,7 @@ html, body {
 
 .website-logo .logo {
     display: inline-block;
-    background-image: url("../images/logo-light.svg");
+    background-image: url("./logo-light.svg");
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -80,7 +80,7 @@ html, body {
 
 .website-logo-inside .logo {
     display: inline-block;
-    background-image: url("../images/logo-light.svg");
+    background-image: url("./logo-light.svg");
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -192,7 +192,7 @@ html, body {
     font-weight: 900;
     color: #FE4777;
 }
-
+/* 
 .img-holder .info-holder p {
     display: inline-block;
     color: #fff;
@@ -208,7 +208,6 @@ html, body {
 
 .img-holder .info-holder img {
     width: 100%;
-    max-width: 378px;
 }
 
 .img-holder .info-holder img.md-size {
@@ -226,7 +225,7 @@ html, body {
 .img-holder .info-holder.simple-info img {
     max-width: 160px;
     margin-bottom: 50px;
-}
+} */
 
 .img-holder .bg {
     position: absolute;
@@ -235,7 +234,7 @@ html, body {
     top: 0;
     width: 100%;
     height: 100%;
-    background-image: url("../images/img1.jpg");
+    background-image: url("./wall.jpg");
     background-size: cover;
     background-position: center;
     z-index: -1;
