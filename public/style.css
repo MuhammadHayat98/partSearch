@@ -46,3 +46,8 @@ p {
 .nav-link .log{
 	font-size: 40px;
 }
+.card{
+	padding: 5%;
+	border-radius: .50rem;
+	margin: .50rem;
+}
