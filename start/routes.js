@@ -18,10 +18,10 @@ const Route = use('Route')
 
 Route.on('/').render('login')
 // Route.get('/listing/:product', 'ListingController.list')
-Route.on('/listing').render('listing');
+Route.get('/listing','ListingController.view');
 Route.get('/products/:product', 'ProductController.search')
-Route.on('search',).render('search')
-Route.on('about',).render('about')
+Route.get('search','SearchController.view')
+Route.get('about','AboutController.view')
 Route.on('login',).render('login')
 Route.on('register',).render('register')
 Route.on('forget',).render('forget')

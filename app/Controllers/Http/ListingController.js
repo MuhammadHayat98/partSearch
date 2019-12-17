@@ -1,8 +1,8 @@
 'use strict'
 
 class ListingController {
-    async list ({params}){
-        Route.get('/products/test') 
+    async view ({params,view}){
+        return view.render('listing', {test: params})
 
     }
     
