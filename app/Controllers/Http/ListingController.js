@@ -1,8 +1,9 @@
 'use strict'
 
 class ListingController {
-    async view ({params,view}){
-        return view.render('listing', {test: params})
+    async view ({request,view}){
+        console.log(request.input('search'))
+        return view.render('listing')
 
     }
     
