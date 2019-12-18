@@ -1,15 +1,3 @@
-/*
-Animate.css - http://daneden.me/animate
-LICENSED UNDER THE  MIT LICENSE (MIT)
-
-Copyright (c) 2011 Dan Eden
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-*/
 
 .animated {
 	-webkit-animation-fill-mode: both;
@@ -237,7 +225,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	-o-animation-name: swing;
 	animation-name: swing;
 }
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
 @-webkit-keyframes wobble {
   0% { -webkit-transform: translateX(0%); }
@@ -296,7 +283,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	-o-animation-name: wobble;
 	animation-name: wobble;
 }
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
 @-webkit-keyframes pulse {
     0% { -webkit-transform: scale(1); }	
@@ -3708,7 +3694,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	-o-animation-name: hinge;
 	animation-name: hinge;
 }
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
 @-webkit-keyframes rollIn {
 	0% { opacity: 0; -webkit-transform: translateX(-100%) rotate(-120deg); }
@@ -3742,7 +3727,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	-o-animation-name: rollIn;
 	animation-name: rollIn;
 }
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
 @-webkit-keyframes rollOut {
     0% {
@@ -3817,7 +3801,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 
 
-/* extended by Codrops */
 
 @-webkit-keyframes scaleOut {
 	0% {

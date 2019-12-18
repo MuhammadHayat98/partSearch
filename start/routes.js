@@ -22,8 +22,12 @@ Route.get('/listing','ListingController.view');
 Route.get('/products/:product', 'ProductController.search')
 Route.get('search','SearchController.view')
 Route.get('about','AboutController.view')
+
+==
 Route.get('login','LoginController.view')
 Route.post('login','LoginController.login')
 Route.get('register','RegisterController.view')
-Route.get('forget','ForgetController.view')
+Route.post('register','RegisterController.store')
+
+
 

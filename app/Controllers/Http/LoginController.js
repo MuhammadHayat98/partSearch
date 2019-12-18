@@ -8,7 +8,7 @@ class LoginController {
     async login({view,request}){
         console.log(request)
     }
-    
+   
     
 }
 
