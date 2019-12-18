@@ -16,12 +16,18 @@
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
 const Route = use('Route')
 
-Route.on('/').render('login')
+Route.on('/','LoginController.view')
 // Route.get('/listing/:product', 'ListingController.list')
 Route.get('/listing','ListingController.view');
 Route.get('/products/:product', 'ProductController.search')
 Route.get('search','SearchController.view')
 Route.get('about','AboutController.view')
-Route.on('login',).render('login')
-Route.on('register',).render('register')
-Route.on('forget',).render('forget')
+
+==
+Route.get('login','LoginController.view')
+Route.post('login','LoginController.login')
+Route.get('register','RegisterController.view')
+Route.post('register','RegisterController.store')
+
+
+
