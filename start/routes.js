@@ -19,14 +19,13 @@ const Route = use('Route')
 
 
 Route.get('/listing','ListingController.view');
-Route.get('/products/:product', 'ProductController.search')
 Route.get('search','SearchController.view')
 Route.get('about','AboutController.view')
 
 Route.get('/','LoginController.view')
-Route.post('login','LoginController.login')
-Route.get('register','RegisterController.view')
-Route.post('register','RegisterController.store')
+Route.post('login','LoginController.login').as('login.login')
+Route.get('/register','RegisterController.view').as('register.view')
+Route.post('/register','RegisterController.store').as('register.store')
 
 
 

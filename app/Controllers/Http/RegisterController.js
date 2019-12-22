@@ -1,21 +1,20 @@
 'use strict'
-const User = User('App/Models/User')
+const User = use('App/Models/User')
 
 class RegisterController {
   async view({view}){
     return view.render('register')
   }
 
-  async store({request,response}){
+  async store({request,response, session}){
     console.log('test')
-    // const user = await User.view({
-    //   username: request.input('usernamesignup'),
-    //   email: request.input('emailsignup'),
-    //   password: request.input('passwordsignup'),
-    //   password_confirm: request.input('passwordsignup_confirm'),
-    // })
-    // sessionStorage.flash({successMessage:'yes'})
-    // return response.redirect('back')
+    const user = await User.create({
+      username: request.input('usernamesignup'),
+      email: request.input('emailsignup'),
+      password: request.input('passwordsignup')
+    })
+    session.flash({successMessage:'Registered successfully'})
+    return response.redirect('/')
   }
 }
 

@@ -9,7 +9,7 @@ class ListingController {
             return view.render('listing', { items: items.data })
           } catch (e) {
             console.log(e.message)
-            return view.render('listing', { books: [] })
+            return view.render('listing', { items: [] })
           }
         
     }
@@ -21,7 +21,7 @@ class ListingController {
                 if (err) { return reject(err) }
       
                 if (request.statusCode === 403) {
-                  return reject(new Error('Invalid New York Times API Key'))
+                  return reject(new Error('Invalid Key'))
                 }
       
                 return resolve({

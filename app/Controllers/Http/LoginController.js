@@ -5,8 +5,12 @@ class LoginController {
         return view.render('login')
     }
 
-    async login({view,request}){
-        console.log(request)
+    async login({ request, auth, session, response }){
+        await auth.attempt(request.input('email'), request.input('password'))
+
+        session.flash({ successMessage: 'You have logged in successfully!' })
+
+        return response.route('search')
     }
    
     
