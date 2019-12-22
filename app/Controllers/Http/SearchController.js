@@ -1,7 +1,8 @@
 'use strict'
-
+const Favorite = use('App/Models/Favorite')
+//const { validate } = use('Validator')
 class SearchController {
-    async view({view}){
+    async view({ request, auth, response, view }){
         return view.render('search')
     }
 }

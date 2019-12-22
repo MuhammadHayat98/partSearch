@@ -18,12 +18,14 @@ const Route = use('Route')
 
 
 
-Route.get('/listing','ListingController.view');
-Route.get('search','SearchController.view')
+Route.get('/listing','ListingController.view')
+
+Route.get('search','SearchController.view').middleware(['auth'])
 Route.get('about','AboutController.view')
 
 Route.get('/','LoginController.view')
 Route.post('login','LoginController.login').as('login.login')
+Route.post('/logout', 'LoginController.destroy').as('logout')
 Route.get('/register','RegisterController.view').as('register.view')
 Route.post('/register','RegisterController.store').as('register.store')
 

@@ -12,6 +12,12 @@ class LoginController {
 
         return response.route('search')
     }
+
+    async destroy ({ params, auth, request, response }) {
+        await auth.logout()
+    
+        return response.route('/')
+      }
    
     
 }
